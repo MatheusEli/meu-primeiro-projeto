@@ -6,4 +6,54 @@
 
 <ion-content>
 
+  <ion-row class = "ion-margin">
+    <ion-col *ngFor = "let i of [1,2,3,4,5]">
+      <ion-avatar class = "user-avatar">
+        <img [src]="'https://randomuser.me/api/portraits/women/'+i+'.jpg'" alt="woman">
+      </ion-avatar>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-card *ngFor = "let i of [1,2,3,4]">
+    <ion-card-header>
+
+      <ion-row class = "ion-align-items-center">
+        <ion-col size = "auto">
+          <ion-avatar class = "user-avatar">
+          <img src = "https://randomuser.me/api/portraits/women/43.jpg" alt = "gorgeous-woman">
+        </ion-avatar>
+      </ion-col>
+        <ion-col>
+          <ion-card-title>Jessica Winston</ion-card-title>
+          <ion-card-subtitle>Atacama Desert</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <img class = "square" src="https://images.pexels.com/photos/4001404/pexels-photo-4001404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Universe">
+      <ion-row>
+        <ion-col size = "auto">
+          <ion-button fill = "clear">
+            <ion-icon slot = "icon-only" name = "heart-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size = "auto">
+          <ion-button fill = "clear">
+            <ion-icon slot = "icon-only" name = "chatbubble-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size = "auto">
+          <ion-button fill = "clear">
+            <ion-icon slot = "icon-only" name = "send-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size = "auto" style = "margin-left: auto;">
+          <ion-button fill = "clear">
+            <ion-icon slot = "icon-only" name = "bookmark-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

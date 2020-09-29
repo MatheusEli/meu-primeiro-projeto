@@ -10,15 +10,21 @@ const routes: Routes = [
 
       {
         path: 'feed',
-        loadChildren: () => import('../feed/feed.module').then( m => m.FeedPageModule)
+        loadChildren: () => import('../feed/feed.module').then(m => m.FeedPageModule)
       },
       {
         path: 'profile',
-        loadChildren: () => import('../profile/profile.module').then( m => m.ProfilePageModule)
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
         path: 'like',
-        loadChildren: () => import('../like/like.module').then( m => m.LikePageModule)
+        loadChildren: () => import('../like/like.module').then(m => m.LikePageModule)
+      },
+
+      {
+        path: '',
+        redirectTo: 'feed',
+        pathMatch: 'full'
       }
     ]
   },
@@ -28,4 +34,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule { }
