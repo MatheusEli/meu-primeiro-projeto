@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedPage implements OnInit {
 
+  public nameIconHeart = "heart-outline";
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeIcon(){
+
+    if(this.nameIconHeart == "heart-outline"){
+
+      this.nameIconHeart = "heart";
+    }else{
+
+      if(this.nameIconHeart == "heart"){
+
+        this.nameIconHeart = "heart-outline";
+      }
+    }
+  }
 }

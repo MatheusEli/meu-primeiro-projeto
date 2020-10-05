@@ -29,8 +29,8 @@
       <img class = "square" src="https://images.pexels.com/photos/4001404/pexels-photo-4001404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Universe">
       <ion-row>
         <ion-col size = "auto">
-          <ion-button fill = "clear">
-            <ion-icon slot = "icon-only" name = "heart-outline"></ion-icon>
+          <ion-button (click) = "changeIcon()" fill = "clear">
+            <ion-icon slot = "icon-only" name = {{nameIconHeart}}></ion-icon>
           </ion-button>
         </ion-col>
         <ion-col size = "auto">
