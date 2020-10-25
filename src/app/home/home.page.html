@@ -1,92 +1,19 @@
-<ion-content class="ion-padding">
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="feed">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Feed</ion-label>
+    </ion-tab-button>
 
-  <ion-text>
-    <h3><strong>Hi Myke,<br>Where do you want to go?</strong></h3>
-  </ion-text>
+    <ion-tab-button tab="like">
+      <ion-icon name="heart"></ion-icon>
+      <ion-label>Likes</ion-label>
+      <ion-badge>10</ion-badge>
+    </ion-tab-button>
 
-  <ion-item class="ion-margin-top">
-    <ion-icon name="location" slot="start"></ion-icon>
-    <ion-input placeholder="Input destination"></ion-input>
-    <ion-icon name="arrow-forward" slot="end"></ion-icon>
-  </ion-item>
-
-  <ion-row class="ion-align-items-center ion-margin-top">
-
-    <ion-col size="auto">
-      <h2 class="ion-no-margin">Daily Scenary</h2>
-    </ion-col>
-
-    <ion-col size="auto">
-      <ion-text color="primary"><small>Updated</small></ion-text>
-    </ion-col>
-
-    <ion-col class="ion-text-right">
-      <ion-text color="medium">More</ion-text>
-    </ion-col>
-
-  </ion-row>
-
-  <ion-card>
-    <img class="daily-scenary-picture" alt="São Petersburgo, Rússia"
-      src="https://s3.amazonaws.com/cdn.chickenorpasta.com.br/content/uploads/2018/06/18075158/Church-of-Our-Savior-on-the-spilled-Blood_St-Petersbur1-1440x620.jpg">
-
-    <ion-row class= "ion-align-items-center">
-      <ion-col>
-        <ion-card-header>
-          <ion-card-subtitle color="medium">20.09.2020</ion-card-subtitle>
-          <ion-card-title>São Petersburgo, Rússia</ion-card-title>
-        </ion-card-header>
-      </ion-col>
-
-      <ion-col size = "auto">
-
-        <ion-row clas= "ion-justify-content-right">
-          <ion-avatar class = "daily-scenary-avatar"><img
-              src="https://s2.glbimg.com/_D2srPO3FEpo-06xTBZWPncYvFE=/0x0:1700x1065/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/K/w/hUaKEDRJS02RfCgF4c6g/000-1ty4hz.jpg">
-          </ion-avatar>
-          <ion-avatar class = "daily-scenary-avatar"><img
-              src="https://midia.gruposinos.com.br/_midias/jpg/2020/02/26/000_1pc2nv-18872479.jpg">
-          </ion-avatar>
-        </ion-row>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
-  <ion-row class="ion-align-items-center ion-margin-top">
-
-    <ion-col size="auto">
-      <h2 class="ion-no-margin">City</h2>
-    </ion-col>
-
-    <ion-col size="auto">
-      <ion-badge color="primary">Hot</ion-badge>
-    </ion-col>
-
-    <ion-col class="ion-text-right">
-      <ion-text color="medium">More</ion-text>
-    </ion-col>
-
-  </ion-row>
-
-  <ion-row>
-    <ion-col>
-      <ion-card class = "ion-no-margin city-card">
-        <img src = "https://scx2.b-cdn.net/gfx/news/hires/2020/2-moscow.jpg">
-        <h3>Moscow</h3>
-      </ion-card>
-    </ion-col>
-    <ion-col>
-      <ion-card class = "ion-no-margin city-card">
-        <img src = "https://www.y-axis.com/news/wp-content/uploads/2017/05/Freeport-of-Vladivostok-Russia-to-grant-1280x720.jpg">
-        <h3>Vladivostok</h3>
-      </ion-card>
-    </ion-col>
-    <ion-col>
-      <ion-card class = "ion-no-margin city-card">
-        <img src = "https://i.pinimg.com/originals/e2/a1/75/e2a175526f2e41d259f87d1785883758.jpg">
-        <h3>Omsk</h3>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-
-</ion-content>
+    <ion-tab-button tab="profile">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
